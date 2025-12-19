@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт техники</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #222;
+            padding: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav img {
+            height: 2em;
+            width: auto;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            background: #222;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        /* Подвал */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .socials {
+            margin: 10px 0;
+        }
+
+        .socials a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    
+    <nav>
+        <img src="logo.svg">
+        <a href="#home">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#portfolio">Наши работы</a>
+        <a href="#offer">Оставить заявку на ремонт</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Ремонт любой техники</h2>
+    <p style="text-align:center;">
+        Быстрый и качественный ремонт телефонов, ноутбуков и другой техники Санкт-Петербурге.
+    </p>
+</section>
+
+<section id="about">
+    <h2>О нас</h2>
+    <p>
+        Мы уже 5 лет на рынке, занимаемся ремонтом любой техники: малая бытовая,
+        смартфоны, ПК, ноутбуки, планшеты. Готовы взяться и за более сложную технику. Также можум взяться за выполнение индивидуальных заказов на производство, по этим вопросам обращайтесь по нашим контактам.
+        Далее представлена малая часть наших работ.
+    </p>
+</section>
+
+<section id="portfolio">
+    <h2>Наши работы</h2>
+    <div class="gallery">
+        <figure><img src="whoop.jpg" alt="Замена регулятора оборотов betafpv air65"><figcaption>Замена регулятора оборотов betafpv air65</figcaption></figure>
+        <figure><img src="washing_machine.jpg" alt="Ремонт стиральной машины"><figcaption>Ремонт стиральной машины</figcaption></figure>
+        <figure><img src="battery.jpg" ><figcaption>Перепаковка аккумулятора</figcaption></figure>
+       <figure><img src="screen.jpg" ><figcaption>Замена экрана смартфона</figcaption></figure>
+    </div>
+</section>
+
+<section id="offer">
+    <h2>Оставить заявку на ремонт</h2>
+    <form>
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="email" name="email" placeholder="Email"
+               pattern=".+@.+"
+               title="Email должен содержать символ @"
+               required>
+        <textarea name="message" placeholder="Сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+
+<footer>
+    
+    <div class="socials">
+        <a href="https://vk.com" target="_blank">VK</a>
+        <a href="https://t.me" target="_blank">Telegram</a><br>
+        <a href="tel:+79991234567">+7 (999) 999-99-99</a><br>
+        <a href="mailto:example@mail.ru">example@mail.ru</a>
+    </div>
+    <p>© 2025 Ремонт техники</p>
+</footer>
+
+</body>
+</html>
+
